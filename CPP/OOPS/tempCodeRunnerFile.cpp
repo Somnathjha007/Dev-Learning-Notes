@@ -1,0 +1,2 @@
+
+            ptr = new int(val);
