@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 //Recurssion: when a function calls itself until a specific condition is met.
