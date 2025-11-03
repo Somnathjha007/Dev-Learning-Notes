@@ -1,0 +1,72 @@
+package main
+
+import "fmt"
+
+func main(){
+	// var card string = "Ace of Spades"
+	card := "Ace of spades" // same as above
+	card = "Apple"
+
+	var apple = "banana"
+	apple = 22
+	
+	fmt.Println(card)
+}
+
+package main
+
+import "fmt"
+
+func main() {
+	card := newCard()
+	fmt.Println(card)
+}
+func apple() uint16 {
+	return 121
+}
+
+func newCard() string {
+	return "Five of Diamonds"
+}
+
+// Go has two contigious data types : 1. Array and 2.slic
+// Array : static Array
+// Slice : Dynamic Array
+// Must be defined with a data types
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	cards := []string{"Ace of spades", newCard()}
+	cards = append(cards, "Six of spades")
+	cards = append(cards, "one of spades", "two of spades")
+	//append can add as much as we want
+	//
+	//fmt.Println(cards)
+	// for index,variable := range {//code to execute}
+	// := -> needs to use because every time we remove ince declaued card
+	for  i,card := range cards {
+		fmt.Println(i,card)
+	}
+
+}
+func newCard() string {
+	return "Ace of Heart"
+}
+
+// Reciver : 
+
+func (variable_name type_of_variable) name_of_function(){
+	//Code 
+}
+
+
+
+func (d deck) print() {
+	for i,card := range d{
+		fmt.Println(i,card)
+	}
+}
